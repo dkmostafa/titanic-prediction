@@ -19,10 +19,7 @@ data = data_handler.getDataSet('../Data/train.csv');
 
 
 @app.route('/')
-def hello():
-
-    #todo:must use all features and better organisation
-
+def run_classifiers():
 
     features_to_be_used = ['Pclass','Sex','Age','SibSp','Parch'];
     target = 'Survived';
@@ -48,7 +45,7 @@ def hello():
 
 
 
-    return 'dsa';
+    return 'classifiers done';
 
 
 
